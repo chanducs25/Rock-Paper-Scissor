@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scores">
+        <p>Computer : <span id="computer_score">0</span></p>
+        <p>You : <span id="user_score">0</span></p>
+      </div>
+      <div class="weapons">
+        <button onclick="checker('rock')" id="rockButton">
+          <i class="far fa-hand-rock"></i>
+        </button>
+        <button onclick="checker('paper')" id="paperButton">
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button onclick="checker('scissor')" id="scissorButton">
+          <i class="far fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="details">
+        <p id="user_choice"></p>
+        <p id="comp_choice"></p>
+        <p id="result"></p>
+      </div>
+      <button onclick="restartGame()" class="reset">Restart Game</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
